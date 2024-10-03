@@ -1,11 +1,11 @@
 # java-decompile
 
 ## 목차
-    - [IntelliJ IDEA Decompiler Tool]()
-	- [JD-GUI]()
-	- [CFR (Class File Reader)]()
+- [IntelliJ IDEA ConsoleDecompiler](#intellij-idea-decompiler-tool)
+- [JD-GUI]()
+- [CFR (Class File Reader)]()
 
-## IntelliJ IDEA Decompiler Tool
+## IntelliJ IDEA ConsoleDecompiler
 
 이 도구는 IntelliJ IDEA의 Java 디컴파일러를 사용하여 JAR 파일을 디컴파일하는 Windows 배치 스크립트입니다.
 
