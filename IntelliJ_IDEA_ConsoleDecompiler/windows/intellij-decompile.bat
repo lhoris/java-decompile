@@ -9,12 +9,12 @@ REM Display usage information if no arguments are provided
 if "%~1"=="" (
     echo Usage:
     echo   1. Run without arguments and follow the prompts:
-    echo      decompile.bat
+    echo      intellij-decompile.bat
     echo   2. Run with arguments:
-    echo      decompile.bat "path\to\your.jar" "path\to\target\directory"
+    echo      intellij-decompile.bat "path\to\your.jar" "path\to\target\directory"
     echo.
     echo Example:
-    echo   decompile.bat "C:\MyJars\app.jar" "C:\Decompiled"
+    echo   intellij-decompile.bat "C:\MyJars\app.jar" "C:\Decompiled"
     echo.
     
     REM No arguments, get user input

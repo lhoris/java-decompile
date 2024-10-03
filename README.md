@@ -1,8 +1,10 @@
 # java-decompile
 
 ## 목차
-- [JD-GUI]()
-- [CFR (Class File Reader)]()
+- [JD-GUI](#jd-gui)
+- [Fernflower](https://github.com/fesh0r/fernflower)
+- [Procyon](https://github.com/ststeiger/procyon)
+- [CFR (Class File Reader)](http://www.benf.org/other/cfr/)
 - [IntelliJ IDEA ConsoleDecompiler](#intellij-idea-consoledecompiler)
 
 ## JD-GUI
@@ -21,6 +23,7 @@ CFR은 최신 Java 기능을 디컴파일합니다. Java 9, 12 및 14 의 대부
 
 ## IntelliJ IDEA ConsoleDecompiler
 
+IntelliJ의 java-decompiler는 디컴파일러 내부 엔진으로 Fernflower를 사용하고 있습니다.  
 이 도구는 IntelliJ IDEA의 Java 디컴파일러를 사용하여 JAR 파일을 디컴파일하는 Windows 배치 스크립트입니다.
 
 ### 사용 방법
@@ -29,6 +32,13 @@ CFR은 최신 Java 기능을 디컴파일합니다. Java 9, 12 및 14 의 대부
 
 1. 명령줄 인자를 사용하는 방법
 2. 대화형 프롬프트를 사용하는 방법
+
+사용하기에 앞서 내 컴퓨터에 설치된 IntelliJ JDK와 decompiler jar 파일 경로를 변경해줍니다.(intellij-decompile.bat)
+```bat
+REM Set the paths for IntelliJ IDEA's JDK and java-decompiler.jar
+set IDEA_JDK="C:\Users\TFX5470H\AppData\Local\Programs\IntelliJ IDEA Ultimate\jbr\bin\java.exe"
+set DECOMPILER_JAR="C:\Users\TFX5470H\AppData\Local\Programs\IntelliJ IDEA Ultimate\plugins\java-decompiler\lib\java-decompiler.jar"
+```
 
 ### 1. 명령줄 인자 사용
 
@@ -78,12 +88,12 @@ intellij-decompile.bat
 C:\java-decompile>intellij-decompile.bat
 Usage:
   1. Run without arguments and follow the prompts:
-     decompile.bat
+     intellij-decompile.bat
   2. Run with arguments:
-     decompile.bat "path\to\your.jar" "path\to\target\directory"
+     intellij-decompile.bat "path\to\your.jar" "path\to\target\directory"
 
 Example:
-  decompile.bat "C:\MyJars\app.jar" "C:\Decompiled"
+  intellij-decompile.bat "C:\MyJars\app.jar" "C:\Decompiled"
 
 Enter the path of the JAR file to decompile: C:\Decompile\class-jar\log4j-core-2.17.2.jar
 Enter the name of the directory to save decompiled results default current directory: C:\Decompile\java-jar
