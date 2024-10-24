@@ -43,7 +43,7 @@ REM Create target directory if it doesn't exist
 if not exist "!TARGET_DIR!" mkdir "!TARGET_DIR!"
 
 REM Run ConsoleDecompiler with IntelliJ IDEA's JDK
-%IDEA_JDK% -cp %DECOMPILER_JAR% org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler -dgs=true "!JAR_PATH!" "!TARGET_DIR!"
+%IDEA_JDK% -cp %DECOMPILER_JAR% org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler -dgs=1 "!JAR_PATH!" "!TARGET_DIR!"
 
 if %errorlevel% neq 0 (
     echo An error occurred during decompilation.

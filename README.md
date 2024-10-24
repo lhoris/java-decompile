@@ -4,7 +4,7 @@
 - [JD-GUI](#jd-gui)
 - [Fernflower](https://github.com/fesh0r/fernflower)
 - [Procyon](https://github.com/ststeiger/procyon)
-- [CFR (Class File Reader)](http://www.benf.org/other/cfr/)
+- [CFR (Class File Reader)](#cfr-class-file-reader)
 - [IntelliJ IDEA ConsoleDecompiler](#intellij-idea-consoledecompiler)
 
 ## JD-GUI
@@ -19,7 +19,7 @@ JD-GUI를 실행하고, 디컴파일할 JAR 파일을 엽니다.
 
 ## CFR (Class File Reader)
 
-CFR은 최신 Java 기능을 디컴파일합니다. Java 9, 12 및 14 의 대부분을 포함 하지만 Java 6으로만 작성되었으므로 어디에서나 작동합니다.
+[CFR](http://www.benf.org/other/cfr/)은 최신 Java 기능을 디컴파일합니다. Java 9, 12 및 14 의 대부분을 포함 하지만 Java 6으로만 작성되었으므로 어디에서나 작동합니다.
 
 ## IntelliJ IDEA ConsoleDecompiler
 
